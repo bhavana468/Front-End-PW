@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Boxes</title>
+<link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+  <div class="main-container">
+    <div class="sub-container">
+    <!--title-->
+        <div class="sub-container1">
+            <div><hr style="height:1px;border-width:0;color:gray;background-color:rgb(206, 198, 198)"></div>
+              <div style="display:block;font-size:22px;text-align: center;color: rgb(247, 57, 117) ;">YAY! It's BOGO</div>
+              <div> <hr style="height:1px;border-width:0;color:gray;background-color:rgb(200, 195, 195)"></div>
+          </div>
+          <!---------------------------------------first box------------------------------------------------------->
+          <div class="sub-container2" onclick="colorBox1()"  id="first-box">
+            <div><input type="radio" id="radio-btn1" name="no_of_units" value="1 Unit" onclick="func1()" >
+                  <label for="radio-btn1" style="font-weight: bold;" >1 Unit<span class="badge">10% Off</span></label><br>
+                <span style="margin-left: 31px;">Standard price</span>
+                <!--------select option----------->
+                <div id="select-box1" style="display: none;" class="select-box">
+                    <table>
+                        <tr>
+                          <th>Size</th>
+                          <th>Colour</th>
+                        </tr>
+                        <tr>
+                          <td><select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                            <option value="S">S</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                            
+                        </select>
+                    </td>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="Colour">Colour</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Green">Green</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="S">S</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                
+                            </select>
+                          </td>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="Colour">Colour</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Green">Green</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </table>
+            </div>
+            </div>
+            <div><P style="font-weight: bold;" >$10.00USD</P>
+            <span style="color: rgb(174, 161, 161);"><del>$24.00USD</del></span></div>
+          </div>
+          <!---------------------------------second box------------------------------------------------------>
+          <div class="sub-container3" onclick="colorBox2(this)" id="second-box">
+            <div><input type="radio" id="radio-btn2" name="no_of_units" value="2 Units"  onclick="func2()">
+                  <label for="radio-btn2" style="font-weight: bold;">2 Units<span class="badge">20% Off</span></label><br>
+                <!--select option-->
+                <div id="select-box2" style="display: none;" class="select-box">
+                    <table>
+                        <tr>
+                          <th>Size</th>
+                          <th>Colour</th>
+                        </tr>
+                        <tr>
+                          <td><select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                            <option value="S">S</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                            
+                        </select>
+                    </td>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="Colour">Colour</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Green">Green</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="S">S</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                
+                            </select>
+                          </td>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="Colour">Colour</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Green">Green</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </table>
+            </div>
+            </div>
+            
+            <div><P style="font-weight: bold;" >$18.00USD</P>
+            <span style="color: rgb(174, 161, 161);"><del>$24.00USD</del></span></div>
+        </div>
+        <!---------------------------------------------third box------------------------------------------------>
+          <div class="sub-container4" onclick="colorBox3(this)"  id="third-box" >
+            <div><input type="radio" id="radio-btn3" name="no_of_units" value="3 Units"  onclick="func3()">
+                  <label for="radio-btn3" style="font-weight: bold;">3 Units<span class="badge">30% Off</span></label><br>
+                <!--select option-->
+                <div id="select-box3" style="display: none;" class="select-box">
+                    <table>
+                        <tr>
+                          <th>Size</th>
+                          <th>Colour</th>
+                        </tr>
+                        <tr>
+                          <td><select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                            <option value="S">S</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                            
+                        </select>
+                    </td>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="Colour">Colour</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Green">Green</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="S">S</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                
+                            </select>
+                          </td>
+                          <td>
+                            <select name="" id="select-colour3" style="margin:10px 10px 10px 10px;">
+                                <option value="Colour">Colour</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Green">Green</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </table>
+            </div>
+            </div>
+            <div><P style="font-weight: bold;" >$24.00USD</P>
+            <span style="color: rgb(174, 161, 161);"><del>$24.00USD</del></span></div>
+          </div>
+          <!-----------------------------------links-------------------------------------------->
+          <div class="sub-container5">
+            <div ><p style="color: rgb(247, 57, 117);">Free Delivery</p></div>
+            <div><p style="text-align: right;">Total : $18.00USD</p></div>
+          </div>
+          <!-----------------------------------------button-------------------------------------------->
+          <div class="sub-container6">
+            <a href="#" class="button">+  Add to Cart</a><small style="color: gray;text-align: right;font-style: italic;">@Powered by Pumper</small>
+          </div>
+        </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
